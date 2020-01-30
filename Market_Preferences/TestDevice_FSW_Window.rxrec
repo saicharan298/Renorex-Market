@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="46b8243a-0c38-4527-8d2a-c23a38e9e6a8"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TestDevice_FSW_Window"
+	namespace="Market_Preferences">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Test_Device_UserCodeCollection"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fetching_Test_Device_Options"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d4b3748a-79c6-4dcd-9745-214ddfa97d04">
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7c2d5695-098f-4a50-bc34-7808b405b249"
+	name="Market_PreferencesRepository"
+	relativepath="Market_PreferencesRepository.rxrep">
+		<codegen
+		classname="Market_PreferencesRepository"
+		namespace="Market_Preferences">
+		</codegen>
+		<rootfolder
+		id="ef6d43ec-7390-41d3-9583-9a4abc6cdeba"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TestDevice_FSW_Window.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

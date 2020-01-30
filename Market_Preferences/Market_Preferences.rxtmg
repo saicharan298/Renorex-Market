@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Market_Preferences"
+      id="795fe13c-d6eb-4e47-bcdf-d77741beeaa7"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Market_Preferences"
+      id="795fe13c-d6eb-4e47-bcdf-d77741beeaa7"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

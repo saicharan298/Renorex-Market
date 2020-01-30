@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="41860c1e-dc51-4d2f-a98b-cc9531e3256c"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="Market_Preferences">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="User_Preferences_UserCode"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Fetching_UserPreference"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1c01cbd4-82f3-4e51-ab4f-e069f7a7bd76">
+				<argument
+				argname="buildname"
+				id="12470546-82d9-49f3-a433-8ac31bcbb715">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7c2d5695-098f-4a50-bc34-7808b405b249"
+	name="Market_PreferencesRepository"
+	relativepath="Market_PreferencesRepository.rxrep">
+		<codegen
+		classname="Market_PreferencesRepository"
+		namespace="Market_Preferences">
+		</codegen>
+		<rootfolder
+		id="ef6d43ec-7390-41d3-9583-9a4abc6cdeba"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

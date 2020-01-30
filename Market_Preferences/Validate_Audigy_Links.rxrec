@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f206adcf-4f61-4861-85d2-321b47ba0f2b"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Validate_Audigy_Links"
+	namespace="Market_Preferences">
+	</codegen>
+	<variables>
+		<var
+		id="20681488-b7c2-4b70-bec9-198a0736cd48"
+		name="txtMarkrtName">
+		</var>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Links_UserCodeCollection"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Audigy_Website"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4ce1df82-3499-42c7-9e84-46cb86042d1b">
+				<argument
+				argname="_marketname"
+				id="74f9af2f-6a8d-46ab-9440-8ccd5284cf95"
+				variable="txtMarkrtName">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7c2d5695-098f-4a50-bc34-7808b405b249"
+	name="Market_PreferencesRepository"
+	relativepath="Market_PreferencesRepository.rxrep">
+		<codegen
+		classname="Market_PreferencesRepository"
+		namespace="Market_Preferences">
+		</codegen>
+		<rootfolder
+		id="ef6d43ec-7390-41d3-9583-9a4abc6cdeba"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Validate_Audigy_Links.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

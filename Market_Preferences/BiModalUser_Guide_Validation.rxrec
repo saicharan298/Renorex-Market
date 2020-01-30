@@ -1,0 +1,1226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4896c52d-ba26-4205-a3dd-4f28c6efe85f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="BiModalUser_Guide_Validation"
+	namespace="Market_Preferences">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b2caa3f2-dbd9-49af-8a46-c3acd50c9b86"
+		sx="305"
+		sy="40"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1de7ad0d-68c3-41e5-a6b3-31570666540b"
+			sourcename="Recorder">
+				<element
+				capabilities="uiautomation"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="1"
+				prefcap="menuitem"
+				rect="298,25,50,25"
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="text"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						MenuItem
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						MenuItem
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						menu item
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Edit
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						17828
+					</attribute>
+				</element>
+				<path>
+					/form[@classname='Window' and @orientation='None' and @processname='SmartFit']/?/?/menuitem[@name='Edit']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="57616bf4-38fc-4c94-9b66-e4c49f58906c">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCACOANIDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDmqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAor0D+
+zrH/AJ87f/v0v+FH9nWP/Pnb/wDfpf8ACgDz+ivQP7Osf+fO3/79L/hSNptiR/x524/7ZL/hQBwF
+FWZYwvQCoo4ZJn2QxtI391VyaAI6KsfYroMVaCRCqFyHG35R1PNRyxPFs8xcb1Drz1BoAjpyI0hw
+gyetNqzZf64/7tKTsrmlKCnNRYz7NN/c/UUfZpv7n6iu9+x2v/PtD/3wKZLBYwpvlit41/vMqgUv
+eLvR7P8AD/I4X7NN/c/UUfZpv7n6iu5hisJ1LQx20ig4JQKR+lNkXT4vM3wwjygC/wC66A9O1HvB
+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
+mfY/lRT6KAP/2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="391cb10a-6e19-4731-adbc-ef5a22d588b4"
+		sx="425"
+		sy="64"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="02344485-f9d2-48b2-be38-1f523c2c82fd"
+			sourcename="Recorder">
+				<element
+				capabilities="wpfelement"
+				dontcache="False"
+				enabled="True"
+				flavor="wpf"
+				hasfocus="True"
+				index="0"
+				prefcap="menuitem"
+				rect="298,50,168,25"
+				role="menuitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="checked"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Preferences
+					</attribute>
+					<attribute
+					name="automationproperties_acceleratorkey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_accesskey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_helptext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_iscolumnheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrowheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_itemstatus"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_itemtype"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_name"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="basetype"
+					type="System.String">
+						System.Windows.Controls.MenuItem
+					</attribute>
+					<attribute
+					name="fulltype"
+					type="System.String">
+						System.Windows.Controls.MenuItem
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						MenuItem
+					</attribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ActualHeight property of type Double."
+					name="ActualHeight"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ActualWidth property of type Double."
+					name="ActualWidth"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.AllowDrop property of type Boolean."
+					name="AllowDrop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.AlternationCount property of type Int32."
+					name="AlternationCount"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.AlternationIndex property of type Int32."
+					name="AlternationIndex"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Background property of type Brush."
+					name="Background"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BackgroundColor property of type String."
+					name="BackgroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BindingGroup property of type BindingGroup."
+					name="BindingGroup"
+					readonly="False"
+					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BitmapEffect property of type BitmapEffect."
+					name="BitmapEffect"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BitmapEffectInput property of type BitmapEffectInput."
+					name="BitmapEffectInput"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffectInput, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BooleanFieldStore property of type BoolField."
+					name="BooleanFieldStore"
+					readonly="False"
+					type="System.Windows.Controls.MenuItem+BoolField, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BorderBrush property of type Brush."
+					name="BorderBrush"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.BorderColor property of type String."
+					name="BorderColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.CacheMode property of type CacheMode."
+					name="CacheMode"
+					readonly="False"
+					type="System.Windows.Media.CacheMode, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Clip property of type Geometry."
+					name="Clip"
+					readonly="False"
+					type="System.Windows.Media.Geometry, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ClipToBounds property of type Boolean."
+					name="ClipToBounds"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.CommandParameter property of type Object."
+					name="CommandParameter"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ContextMenu property of type ContextMenu."
+					name="ContextMenu"
+					readonly="False"
+					type="System.Windows.Controls.ContextMenu, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.DataContext property of type Object."
+					name="DataContext"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.DisplayMemberPath property of type String."
+					name="DisplayMemberPath"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Effect property of type Effect."
+					name="Effect"
+					readonly="False"
+					type="System.Windows.Media.Effects.Effect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.FlowDirection property of type FlowDirection."
+					name="FlowDirection"
+					readonly="False"
+					type="System.Windows.FlowDirection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Focusable property of type Boolean."
+					name="Focusable"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.FontSize property of type Double."
+					name="FontSize"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ForceCursor property of type Boolean."
+					name="ForceCursor"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Foreground property of type Brush."
+					name="Foreground"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ForegroundColor property of type String."
+					name="ForegroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.GroupStyleSelector property of type GroupStyleSelector."
+					name="GroupStyleSelector"
+					readonly="False"
+					type="System.Windows.Controls.GroupStyleSelector, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.HasHeader property of type Boolean."
+					name="HasHeader"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.HasItems property of type Boolean."
+					name="HasItems"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Header property of type Object."
+					name="Header"
+					readonly="False"
+					type="System.Object"
+					weight="107">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.HeaderStringFormat property of type String."
+					name="HeaderStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Height property of type Double."
+					name="Height"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.HorizontalAlignment property of type HorizontalAlignment."
+					name="HorizontalAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.HorizontalContentAlignment property of type HorizontalAlignment."
+					name="HorizontalContentAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Icon property of type Object."
+					name="Icon"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.InputGestureText property of type String."
+					name="InputGestureText"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsCheckable property of type Boolean."
+					name="IsCheckable"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsChecked property of type Boolean."
+					name="IsChecked"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsGrouping property of type Boolean."
+					name="IsGrouping"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsHighlighted property of type Boolean."
+					name="IsHighlighted"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsHitTestVisible property of type Boolean."
+					name="IsHitTestVisible"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsManipulationEnabled property of type Boolean."
+					name="IsManipulationEnabled"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsPressed property of type Boolean."
+					name="IsPressed"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsSelected property of type Boolean."
+					name="IsSelected"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsSubmenuOpen property of type Boolean."
+					name="IsSubmenuOpen"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsSuspendingPopupAnimation property of type Boolean."
+					name="IsSuspendingPopupAnimation"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsTabStop property of type Boolean."
+					name="IsTabStop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsTextSearchCaseSensitive property of type Boolean."
+					name="IsTextSearchCaseSensitive"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.IsTextSearchEnabled property of type Boolean."
+					name="IsTextSearchEnabled"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ItemBindingGroup property of type BindingGroup."
+					name="ItemBindingGroup"
+					readonly="False"
+					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ItemForItemContainer property of type Object."
+					name="ItemForItemContainer"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ItemStringFormat property of type String."
+					name="ItemStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.LayoutTransform property of type Transform."
+					name="LayoutTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.MaxHeight property of type Double."
+					name="MaxHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.MaxWidth property of type Double."
+					name="MaxWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.MinHeight property of type Double."
+					name="MinHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.MinWidth property of type Double."
+					name="MinWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Opacity property of type Double."
+					name="Opacity"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.OpacityMask property of type Brush."
+					name="OpacityMask"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.OverridesDefaultStyle property of type Boolean."
+					name="OverridesDefaultStyle"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.RenderTransform property of type Transform."
+					name="RenderTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.RenderTransformOrigin property of type Point."
+					name="RenderTransformOrigin"
+					readonly="False"
+					type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Role property of type MenuItemRole."
+					name="Role"
+					type="System.Windows.Controls.MenuItemRole, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.SnapsToDevicePixels property of type Boolean."
+					name="SnapsToDevicePixels"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.StaysOpenOnClick property of type Boolean."
+					name="StaysOpenOnClick"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.TabIndex property of type Int32."
+					name="TabIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Tag property of type Object."
+					name="Tag"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.ToolTip property of type Object."
+					name="ToolTip"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Uid property of type String."
+					name="Uid"
+					readonly="False"
+					type="System.String"
+					weight="150">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.UseLayoutRounding property of type Boolean."
+					name="UseLayoutRounding"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.UsesItemContainerTemplate property of type Boolean."
+					name="UsesItemContainerTemplate"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.VerticalAlignment property of type VerticalAlignment."
+					name="VerticalAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.VerticalContentAlignment property of type VerticalAlignment."
+					name="VerticalContentAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Visibility property of type Visibility."
+					name="Visibility"
+					readonly="False"
+					type="System.Windows.Visibility, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF System.Windows.Controls.MenuItem.Width property of type Double."
+					name="Width"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicaction
+					description="The WPF System.Windows.Controls.MenuItem.OnApplyTemplate method."
+					displayName="OnApplyTemplate">
+						<returns
+						description="Return value."
+						displayName="returns"
+						type="System.Void">
+						</returns>
+					</dynamicaction>
+				</element>
+				<path>
+					/contextmenu[@processname='SmartFit' and @win32ownerwindowlevel='1']/menuitem[@text='Preferences']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="87986865-8f3f-43ea-9fca-41ea758cd6da">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAD+AYADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDmqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK9A/s6x/wCfO3/79L/hR/Z1j/z5
+2/8A36X/AAoA8/or0D+zrH/nzt/+/S/4Uf2dY/8APnb/APfpf8KAPP6K9A/s6x/587f/AL9L/hR/
+Z1j/AM+dv/36X/CgDz+ivQP7Osf+fO3/AO/S/wCFYniOzt4RAYYY487s7VAz0oA5qipHUA9Ketld
+NH5i20zJjO4RkjH1oAgoqf7HPgfu+sfm9R931qCgAooroPClvBcfavPhjl27Mb1DY+960Ac/RXoH
+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
+			</helperscreenshot>
+		</mouseitem>
+		<userrecorditem
+		classname="Bi_modal_UserGuide_UserCodeCollection"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Changing_Bimodal_userGuide"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="304e0678-da8a-4ed2-94a1-885a4e93a141">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="BiModalUser_Guide_Validation"
+		enabled="False"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_Save_Button"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9793b5aa-bb99-4597-9a8c-248f13e9abd3">
+				<argument
+				argname="buttonInfo"
+				id="b7e3a183-d0f0-452a-acf0-bf0ae154a906">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="f64a5e52-9acc-4d2f-b8be-8570ff447d9d"
+					sourcename="ItemRecorderEditor">
+						<path>
+							/form[@classname='Window' and @orientation='None' and @processname='SmartFit']/button[4]
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d94b0ed0-1811-4abb-98d3-f8b48f2a31be"
+		sx="1586"
+		sy="12"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0a662879-1b2f-44bc-a1ce-c68cce30f11a"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationinvoke"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="116"
+				prefcap="button"
+				rect="1572,0,28,25"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						WindowAutomationIds.CloseAction
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						Button
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						WPF
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="ispassword"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Close
+					</attribute>
+					<attribute
+					name="orientation"
+					type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+						None
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						18192
+					</attribute>
+				</element>
+				<path>
+					/form[@name~'Smart Fit' or @name~'Launcher' or @name~'Solus Max' or @name~'Interton Fitting' or @name~'Audigy' or @name~'Costco' or @name~'amplifon' or @classname='Window']/button[@automationid='WindowAutomationIds.CloseAction']
+				</path>
+			</info>
+		</mouseitem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="BiModalUser_Guide_Validation"
+		enabled="True"
+		isexternaltestmethod="False"
+		methodname="Mouse_Click_Exit_Without_saving"
+		namespace="Market_Preferences"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ead7ec0b-c38c-4eab-8e1a-8caa3234c5ea">
+				<argument
+				argname="buttonInfo"
+				id="fb6a861e-dcd3-4b51-bfb6-ae966a558730">
+					<argvaluetype>
+						Ranorex.Core.Repository.RepoItemInfo, Ranorex.Core, Culture=neutral
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+					<info
+					id="6c13bf68-24ff-4dc9-b6cd-bced76f9ce9a"
+					sourcename="RepositoryEditor">
+						<element
+						capabilities="uiautomation, uiautomationinvoke"
+						dontcache="False"
+						enabled="True"
+						flavor="uia"
+						hasfocus="False"
+						index="4"
+						prefcap="button"
+						rect="729,488,149,21"
+						role="button"
+						snapElem=""
+						valid="True"
+						visible="True">
+							<attribute
+							name="pressed"
+							type="System.Boolean">
+								False
+							</attribute>
+							<attribute
+							name="text"
+							type="System.String">
+								Exit Without Saving
+							</attribute>
+							<attribute
+							name="automationid"
+							type="System.String">
+								DialogAutomationIds.PositiveAction
+							</attribute>
+							<attribute
+							name="classname"
+							type="System.String">
+								Button
+							</attribute>
+							<attribute
+							name="controltype"
+							type="System.String">
+								Button
+							</attribute>
+							<attribute
+							name="frameworkid"
+							type="System.String">
+								WPF
+							</attribute>
+							<attribute
+							name="iscontentelement"
+							type="System.Boolean">
+								True
+							</attribute>
+							<attribute
+							name="iscontrolelement"
+							type="System.Boolean">
+								True
+							</attribute>
+							<attribute
+							name="iskeyboardfocusable"
+							type="System.Boolean">
+								True
+							</attribute>
+							<attribute
+							name="ispassword"
+							type="System.Boolean">
+								False
+							</attribute>
+							<attribute
+							name="isrequiredforform"
+							type="System.Boolean">
+								False
+							</attribute>
+							<attribute
+							name="localizedcontroltype"
+							type="System.String">
+								button
+							</attribute>
+							<attribute
+							name="name"
+							type="System.String">
+								Exit Without Saving
+							</attribute>
+							<attribute
+							name="orientation"
+							type="System.Windows.Automation.OrientationType, UIAutomationTypes, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+								None
+							</attribute>
+							<attribute
+							name="processid"
+							type="System.Int32">
+								17492
+							</attribute>
+						</element>
+						<path>
+							/form[@classname='Window' and @orientation='None' and @processname='SmartFit']/button[@automationid='DialogAutomationIds.PositiveAction']
+						</path>
+					</info>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="7c2d5695-098f-4a50-bc34-7808b405b249"
+	name="Market_PreferencesRepository"
+	relativepath="Market_PreferencesRepository.rxrep">
+		<codegen
+		classname="Market_PreferencesRepository"
+		namespace="Market_Preferences">
+		</codegen>
+		<rootfolder
+		id="ef6d43ec-7390-41d3-9583-9a4abc6cdeba"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		BiModalUser_Guide_Validation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

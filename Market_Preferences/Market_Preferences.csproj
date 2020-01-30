@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3C1A947A-863D-4F92-8647-FF510B18BAC4}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Market_Preferences</RootNamespace>
+    <AssemblyName>Market_Preferences</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSWModules">
+      <HintPath>..\..\..\packages\FSWModules.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>D:\TFS\FSW\TestSuites\FeatureFlag_Validation\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.PDF">
+      <HintPath>..\..\..\..\..\Reports - Copy\Ranorex_PDF_Executable (5)\Ranorex.PDF.exe</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Net.Http.4.1.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.0.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>7efea3ad-8a37-442b-b83a-91dde3263f65</id>
+    </Compile>
+    <Compile Include="BiModalUser_Guide_Validation.cs">
+      <BoundTo>a5a11300-8d97-42c0-a963-00fc3fbc04ef</BoundTo>
+      <DependentUpon>BiModalUser_Guide_Validation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14e292fa-b0ef-4d5e-8546-be53c2627c54</id>
+    </Compile>
+    <Compile Include="BiModalUser_Guide_Validation.UserCode.cs">
+      <BoundTo>a5a11300-8d97-42c0-a963-00fc3fbc04ef</BoundTo>
+      <DependentUpon>BiModalUser_Guide_Validation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>58df431e-83ee-4827-9ff0-51fc94542bf8</id>
+    </Compile>
+    <Compile Include="Bi_modal_UserGuide_UserCodeCollection.cs">
+      <id>fe0987a5-fbfb-49e2-b3c1-205e407c9438</id>
+    </Compile>
+    <Compile Include="Change_Default_Language_UserCodeCollection.cs">
+      <id>a756efcd-519e-4408-a0e6-2e94eef117ef</id>
+    </Compile>
+    <Compile Include="CheckForBrand_UserCodeCollection.cs">
+      <id>e25fd2e2-75dd-4d48-a212-77aa8fed63ae</id>
+    </Compile>
+    <Compile Include="Check_For_Brand.cs">
+      <BoundTo>9b9fc765-6142-4de4-95a5-7ee4a34f2b37</BoundTo>
+      <DependentUpon>Check_For_Brand.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85078c50-a423-4d03-9bbf-952ca930e303</id>
+    </Compile>
+    <Compile Include="Check_For_Brand.UserCode.cs">
+      <BoundTo>9b9fc765-6142-4de4-95a5-7ee4a34f2b37</BoundTo>
+      <DependentUpon>Check_For_Brand.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6c56557-5d35-44c7-b392-299d69b144a7</id>
+    </Compile>
+    <Compile Include="Connect_Instrument.cs">
+      <BoundTo>438acdd5-0d82-491e-9f07-97d84cbb24d7</BoundTo>
+      <DependentUpon>Connect_Instrument.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d241d98-48a8-44be-a94a-431fb185b730</id>
+    </Compile>
+    <Compile Include="Connect_Instrument.UserCode.cs">
+      <BoundTo>438acdd5-0d82-491e-9f07-97d84cbb24d7</BoundTo>
+      <DependentUpon>Connect_Instrument.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8883a8b3-6b96-40c3-99f7-94a421606625</id>
+    </Compile>
+    <Compile Include="Gain_Handles.cs">
+      <BoundTo>f6e09631-2674-448f-8999-4649757d9fa9</BoundTo>
+      <DependentUpon>Gain_Handles.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>348c0c96-e267-4b40-b03d-d5081e8ef5cb</id>
+    </Compile>
+    <Compile Include="Gain_Handles.UserCode.cs">
+      <BoundTo>f6e09631-2674-448f-8999-4649757d9fa9</BoundTo>
+      <DependentUpon>Gain_Handles.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8950afe6-2077-462f-9ee8-2145f44219e8</id>
+    </Compile>
+    <Compile Include="Installation_UserCodeCollection.cs">
+      <id>dff4118a-3159-4d22-963d-c25ecbae3a1b</id>
+    </Compile>
+    <Compile Include="Installing_Builds.cs">
+      <BoundTo>30e98e2a-d56c-498a-8744-b2f7f94d116d</BoundTo>
+      <DependentUpon>Installing_Builds.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3f55782a-f002-429f-9a19-cb67d6b95acd</id>
+    </Compile>
+    <Compile Include="Installing_Builds.UserCode.cs">
+      <BoundTo>30e98e2a-d56c-498a-8744-b2f7f94d116d</BoundTo>
+      <DependentUpon>Installing_Builds.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa9e196c-bb22-4bab-bb7d-a1af6069879d</id>
+    </Compile>
+    <Compile Include="Links_UserCodeCollection.cs">
+      <id>fb23e632-e9ea-4322-8134-806783de3cd4</id>
+    </Compile>
+    <Compile Include="Machine_Preference_Excel_FileComparison.cs">
+      <BoundTo>69ca0ffb-9556-41ae-b15e-7ba58b3dc480</BoundTo>
+      <DependentUpon>Machine_Preference_Excel_FileComparison.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01260473-91c8-409e-b9dc-8074d5b5c098</id>
+    </Compile>
+    <Compile Include="Machine_Preference_Excel_FileComparison.UserCode.cs">
+      <BoundTo>69ca0ffb-9556-41ae-b15e-7ba58b3dc480</BoundTo>
+      <DependentUpon>Machine_Preference_Excel_FileComparison.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1732a7d5-f30f-4026-af55-e614be59369d</id>
+    </Compile>
+    <Compile Include="Machine_Preference_FSW_Window.cs">
+      <BoundTo>1d898fee-17d3-4985-9f87-b486c8e986cc</BoundTo>
+      <DependentUpon>Machine_Preference_FSW_Window.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6b643d5b-fffd-40db-970a-db7e4125c5ec</id>
+    </Compile>
+    <Compile Include="Machine_Preference_FSW_Window.UserCode.cs">
+      <BoundTo>1d898fee-17d3-4985-9f87-b486c8e986cc</BoundTo>
+      <DependentUpon>Machine_Preference_FSW_Window.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea646963-1415-48c4-8846-fd0cc71a20b4</id>
+    </Compile>
+    <Compile Include="Machine_Preference_UserCode.cs">
+      <id>71c66af8-60b2-4ab4-a230-066df37b329d</id>
+    </Compile>
+    <Compile Include="Market_PreferencesRepository.cs">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <DependentUpon>Market_PreferencesRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>39d2728d-bdc9-4c6c-ba86-d39b7b147a28</id>
+    </Compile>
+    <Compile Include="PreferenceWindow.cs">
+      <BoundTo>924807fa-c0fb-459f-9f51-d70c73191226</BoundTo>
+      <DependentUpon>PreferenceWindow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ad5c81df-0cdd-4a35-9009-091005b0bf70</id>
+    </Compile>
+    <Compile Include="PreferenceWindow.UserCode.cs">
+      <BoundTo>924807fa-c0fb-459f-9f51-d70c73191226</BoundTo>
+      <DependentUpon>PreferenceWindow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8179d7e-92c6-4434-b32d-0abd39525187</id>
+    </Compile>
+    <Compile Include="PrefernceWindow.cs">
+      <BoundTo>b87f20c5-b3d7-4401-ab2d-f5343129c0a1</BoundTo>
+      <DependentUpon>PrefernceWindow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3471ead5-3225-4d1c-b95a-66122a13de05</id>
+    </Compile>
+    <Compile Include="PrefernceWindow.UserCode.cs">
+      <BoundTo>b87f20c5-b3d7-4401-ab2d-f5343129c0a1</BoundTo>
+      <DependentUpon>PrefernceWindow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab5e9111-9fc9-4eec-be68-43bf45247738</id>
+    </Compile>
+    <Compile Include="PrferenceWin.cs">
+      <BoundTo>44b70026-eb25-4e92-95fb-ef2272f473f8</BoundTo>
+      <DependentUpon>PrferenceWin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0197350e-5a3c-4646-9157-668449628097</id>
+    </Compile>
+    <Compile Include="PrferenceWin.UserCode.cs">
+      <BoundTo>44b70026-eb25-4e92-95fb-ef2272f473f8</BoundTo>
+      <DependentUpon>PrferenceWin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be6de947-31d5-4352-acc7-68791f90a9eb</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>b157447b-48a0-4fcc-8133-7beff1fa7d6c</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>4694810d-d9f5-43d5-97ec-31df924d0f33</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>32481024-dcc6-4acd-903b-af271a6db931</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>4694810d-d9f5-43d5-97ec-31df924d0f33</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65218ba9-77e2-4f2d-8c4b-c05f8971d44b</id>
+    </Compile>
+    <Compile Include="Recording2.cs">
+      <BoundTo>1ac500ea-cb99-48a6-b2a7-468cdcd056b9</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>651cc8d1-acf1-4ada-87e4-95e984020439</id>
+    </Compile>
+    <Compile Include="Recording2.UserCode.cs">
+      <BoundTo>1ac500ea-cb99-48a6-b2a7-468cdcd056b9</BoundTo>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ba8b259-e0c8-41ce-b01e-fbc7c2fb2707</id>
+    </Compile>
+    <Compile Include="ReportToPDF_6.X.cs">
+      <id>7c1b56fc-336c-4760-b406-2a271d7eeb2b</id>
+    </Compile>
+    <Compile Include="Select_InstrumentSimulation.cs">
+      <BoundTo>ef5624f6-baa9-4d69-b547-9e960b418e3d</BoundTo>
+      <DependentUpon>Select_InstrumentSimulation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e05d52f-97ab-4ad0-9419-a0cf40f51b72</id>
+    </Compile>
+    <Compile Include="Select_InstrumentSimulation.UserCode.cs">
+      <BoundTo>ef5624f6-baa9-4d69-b547-9e960b418e3d</BoundTo>
+      <DependentUpon>Select_InstrumentSimulation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>40706559-5f10-4f2f-97fb-6b45ca40a13e</id>
+    </Compile>
+    <Compile Include="Simulation_UserCodeCollection.cs">
+      <id>14e5748d-e4e7-438a-ae8b-be61b4f6ce78</id>
+    </Compile>
+    <Compile Include="TestDevice_Excelfile_Comparison.cs">
+      <BoundTo>e25a4546-9d91-40de-a765-6710ce5151bb</BoundTo>
+      <DependentUpon>TestDevice_Excelfile_Comparison.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9cab75c0-fec0-41f5-8a2e-97919b704278</id>
+    </Compile>
+    <Compile Include="TestDevice_Excelfile_Comparison.UserCode.cs">
+      <BoundTo>e25a4546-9d91-40de-a765-6710ce5151bb</BoundTo>
+      <DependentUpon>TestDevice_Excelfile_Comparison.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36d42374-76d8-4de6-bc3e-68e1c8093588</id>
+    </Compile>
+    <Compile Include="TestDevice_FSW_Window.cs">
+      <BoundTo>3d88b3f0-91b0-47bd-9f46-c6dbe6c68642</BoundTo>
+      <DependentUpon>TestDevice_FSW_Window.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cafe09ab-1512-4ec4-a36f-097f3173d312</id>
+    </Compile>
+    <Compile Include="TestDevice_FSW_Window.UserCode.cs">
+      <BoundTo>3d88b3f0-91b0-47bd-9f46-c6dbe6c68642</BoundTo>
+      <DependentUpon>TestDevice_FSW_Window.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dbb40092-6b83-4d0b-b5e2-f4f8c5520fcf</id>
+    </Compile>
+    <Compile Include="Test_Device_UserCodeCollection.cs">
+      <id>3d804c27-8e31-4d54-a454-15863b7a098f</id>
+    </Compile>
+    <Compile Include="Test_Device_User_CodeColletion.cs">
+      <BoundTo>f8f66b81-ea19-446d-a527-5d7f21acf368</BoundTo>
+      <DependentUpon>Test_Device_User_CodeColletion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3923818e-4c54-4471-a8e0-34971f1cc05f</id>
+    </Compile>
+    <Compile Include="Test_Device_User_CodeColletion.UserCode.cs">
+      <BoundTo>f8f66b81-ea19-446d-a527-5d7f21acf368</BoundTo>
+      <DependentUpon>Test_Device_User_CodeColletion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>41246da3-d015-4295-b2e1-dea6c80ebbac</id>
+    </Compile>
+    <Compile Include="Uninstall_And_Delete.cs">
+      <BoundTo>51f8f926-6bd5-4aac-9511-89008f170fc9</BoundTo>
+      <DependentUpon>Uninstall_And_Delete.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37f2b0e8-5231-46e3-97cf-db35dc288e41</id>
+    </Compile>
+    <Compile Include="Uninstall_And_Delete.UserCode.cs">
+      <BoundTo>51f8f926-6bd5-4aac-9511-89008f170fc9</BoundTo>
+      <DependentUpon>Uninstall_And_Delete.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e3772d98-a14d-40b3-bc69-d8bcdc1008aa</id>
+    </Compile>
+    <Compile Include="UserPreference_Excel_File.cs">
+      <BoundTo>2f23bfe2-26f3-46c2-a534-541e1ea02868</BoundTo>
+      <DependentUpon>UserPreference_Excel_File.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>168d1cfd-5714-4da2-a85d-db0925591f27</id>
+    </Compile>
+    <Compile Include="UserPreference_Excel_File.UserCode.cs">
+      <BoundTo>2f23bfe2-26f3-46c2-a534-541e1ea02868</BoundTo>
+      <DependentUpon>UserPreference_Excel_File.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2230d3ff-26d5-4782-8150-59ab479d11b1</id>
+    </Compile>
+    <Compile Include="User_Preferences_Record_Modules.cs">
+      <BoundTo>f5b4ca62-3eec-44ba-9fa4-7c6331ad8080</BoundTo>
+      <DependentUpon>User_Preferences_Record_Modules.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fff0f599-58d6-4817-9122-146423dca5d5</id>
+    </Compile>
+    <Compile Include="User_Preferences_Record_Modules.UserCode.cs">
+      <BoundTo>f5b4ca62-3eec-44ba-9fa4-7c6331ad8080</BoundTo>
+      <DependentUpon>User_Preferences_Record_Modules.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05d98230-9f5e-473d-90a9-863b68ce6efa</id>
+    </Compile>
+    <Compile Include="User_Preferences_UserCode.cs">
+      <id>d75a5379-87c2-40b7-9f0d-0898923893f3</id>
+    </Compile>
+    <Compile Include="Validate_Audigy_Links.cs">
+      <BoundTo>7252b66c-fac2-4b55-8e2b-7c8d8a0dfc2e</BoundTo>
+      <DependentUpon>Validate_Audigy_Links.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6089388b-1e36-462c-a60b-3cb589a0a258</id>
+    </Compile>
+    <Compile Include="Validate_Audigy_Links.UserCode.cs">
+      <BoundTo>7252b66c-fac2-4b55-8e2b-7c8d8a0dfc2e</BoundTo>
+      <DependentUpon>Validate_Audigy_Links.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b8b15ff9-5090-4228-bd2a-af90d5f93983</id>
+    </Compile>
+    <Compile Include="Validate_SolusMax_Links.cs">
+      <BoundTo>7c1a6a6b-c951-4b80-b882-2ca84398e2d7</BoundTo>
+      <DependentUpon>Validate_SolusMax_Links.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37aba3d4-74e6-48e3-8ac3-a20d1ecc79ad</id>
+    </Compile>
+    <Compile Include="Validate_SolusMax_Links.UserCode.cs">
+      <BoundTo>7c1a6a6b-c951-4b80-b882-2ca84398e2d7</BoundTo>
+      <DependentUpon>Validate_SolusMax_Links.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b56d3fc-ec74-4fa9-a358-4be9f7e358c6</id>
+    </Compile>
+    <Compile Include="Validating_excel_and_FSW.cs">
+      <BoundTo>1f1d914d-824a-46ea-9f41-373914cecc03</BoundTo>
+      <DependentUpon>Validating_excel_and_FSW.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1e1aac2-13c2-4e90-bf2b-d18deb51e274</id>
+    </Compile>
+    <Compile Include="Validating_excel_and_FSW.UserCode.cs">
+      <BoundTo>1f1d914d-824a-46ea-9f41-373914cecc03</BoundTo>
+      <DependentUpon>Validating_excel_and_FSW.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1677db18-651e-4b11-908c-8c8430fb1ad4</id>
+    </Compile>
+    <Compile Include="Validating_URL.cs">
+      <BoundTo>0664adc7-b775-4ba3-ac20-b0f0d6a3ae19</BoundTo>
+      <DependentUpon>Validating_URL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75af077e-c542-4974-a687-cb647ff24524</id>
+    </Compile>
+    <Compile Include="Validating_URL.UserCode.cs">
+      <BoundTo>0664adc7-b775-4ba3-ac20-b0f0d6a3ae19</BoundTo>
+      <DependentUpon>Validating_URL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>10a46a56-4e2e-4ad7-b3c9-66d9f4f1edf0</id>
+    </Compile>
+    <Compile Include="WebUpdates_Excel_Comaparison.cs">
+      <BoundTo>52a54612-6fab-4b38-b99b-d7262ec61945</BoundTo>
+      <DependentUpon>WebUpdates_Excel_Comaparison.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6acd8b83-c8c3-430a-b9db-c1ff5f20fa37</id>
+    </Compile>
+    <Compile Include="WebUpdates_Excel_Comaparison.UserCode.cs">
+      <BoundTo>52a54612-6fab-4b38-b99b-d7262ec61945</BoundTo>
+      <DependentUpon>WebUpdates_Excel_Comaparison.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0db6ac2f-5828-4afd-8cf9-a8bbe2623871</id>
+    </Compile>
+    <Compile Include="WebUpdates_UserCodeCollection.cs">
+      <id>2414d5d8-9c8e-47b1-826a-4b4918705d80</id>
+    </Compile>
+    <Compile Include="Web_Updates_FSW_Window.cs">
+      <BoundTo>460db1d3-ae44-4d49-93b2-4894c7831c9f</BoundTo>
+      <DependentUpon>Web_Updates_FSW_Window.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9539df53-a6ba-484d-a691-7d9218e7f6ce</id>
+    </Compile>
+    <Compile Include="Web_Updates_FSW_Window.UserCode.cs">
+      <BoundTo>460db1d3-ae44-4d49-93b2-4894c7831c9f</BoundTo>
+      <DependentUpon>Web_Updates_FSW_Window.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a126e8ec-b753-4b33-b728-3638fcf1094b</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>81f620aa-90fd-4b1d-8d15-02b18065dd6f</id>
+    </None>
+    <None Include="BiModalUser_Guide_Validation.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>a5a11300-8d97-42c0-a963-00fc3fbc04ef</id>
+      <recordtableid>4896c52d-ba26-4205-a3dd-4f28c6efe85f</recordtableid>
+    </None>
+    <None Include="Check_For_Brand.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>9b9fc765-6142-4de4-95a5-7ee4a34f2b37</id>
+      <recordtableid>3c994668-1120-4540-8b00-be41e39ce046</recordtableid>
+    </None>
+    <None Include="Connect_Instrument.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>438acdd5-0d82-491e-9f07-97d84cbb24d7</id>
+      <recordtableid>07a52999-ffcb-4f66-9823-8a711c38f406</recordtableid>
+    </None>
+    <None Include="Gain_Handles.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>f6e09631-2674-448f-8999-4649757d9fa9</id>
+      <recordtableid>6b4fc7ec-44eb-4084-b680-fbf0e50170c6</recordtableid>
+    </None>
+    <None Include="Installing_Builds.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>30e98e2a-d56c-498a-8744-b2f7f94d116d</id>
+      <recordtableid>3cdd62d9-e2c5-4349-9ba7-d4cdab007f0f</recordtableid>
+    </None>
+    <None Include="Machine_Preference_Excel_FileComparison.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>69ca0ffb-9556-41ae-b15e-7ba58b3dc480</id>
+      <recordtableid>cb1df998-2d69-4531-bdaa-102b7edd16c2</recordtableid>
+    </None>
+    <None Include="Machine_Preference_FSW_Window.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>1d898fee-17d3-4985-9f87-b486c8e986cc</id>
+      <recordtableid>00f44732-9c4d-4219-a81f-5eb5aad8d789</recordtableid>
+    </None>
+    <None Include="Market_PreferencesRepository.rximg">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <DependentUpon>Market_PreferencesRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>646cecd3-db6c-4376-b614-c9d3979b71f4</id>
+    </None>
+    <None Include="Market_PreferencesRepository.rxrep">
+      <id>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</id>
+      <repoid>7c2d5695-098f-4a50-bc34-7808b405b249</repoid>
+      <reporootid>ef6d43ec-7390-41d3-9583-9a4abc6cdeba</reporootid>
+    </None>
+    <None Include="packages.config">
+      <id>d377229a-7697-42cf-ad9f-bcef7cbfbf28</id>
+    </None>
+    <None Include="PreferenceWindow.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>924807fa-c0fb-459f-9f51-d70c73191226</id>
+      <recordtableid>8d0374c5-698e-42d7-9a4b-5a687d8e760f</recordtableid>
+    </None>
+    <None Include="PrefernceWindow.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>b87f20c5-b3d7-4401-ab2d-f5343129c0a1</id>
+      <recordtableid>31cbf27a-82e3-4d09-89cf-7eaf81153005</recordtableid>
+    </None>
+    <None Include="PrferenceWin.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>44b70026-eb25-4e92-95fb-ef2272f473f8</id>
+      <recordtableid>ab97561e-f660-4cf3-b7f4-3b33a8017543</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>4694810d-d9f5-43d5-97ec-31df924d0f33</id>
+      <recordtableid>41860c1e-dc51-4d2f-a98b-cc9531e3256c</recordtableid>
+    </None>
+    <None Include="Recording2.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>1ac500ea-cb99-48a6-b2a7-468cdcd056b9</id>
+      <recordtableid>3a42cb44-158e-4e52-921b-88fc60e66400</recordtableid>
+    </None>
+    <None Include="Select_InstrumentSimulation.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>ef5624f6-baa9-4d69-b547-9e960b418e3d</id>
+      <recordtableid>4e7f8dff-8644-4f59-93a4-e9ccd4e093c6</recordtableid>
+    </None>
+    <None Include="TestDevice_Excelfile_Comparison.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>e25a4546-9d91-40de-a765-6710ce5151bb</id>
+      <recordtableid>1b267de0-f7bf-499a-aee0-df894aff58ee</recordtableid>
+    </None>
+    <None Include="TestDevice_FSW_Window.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>3d88b3f0-91b0-47bd-9f46-c6dbe6c68642</id>
+      <recordtableid>46b8243a-0c38-4527-8d2a-c23a38e9e6a8</recordtableid>
+    </None>
+    <None Include="Test_Device_User_CodeColletion.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>f8f66b81-ea19-446d-a527-5d7f21acf368</id>
+      <recordtableid>d5c0288e-1345-493c-9826-14ef01b462c7</recordtableid>
+    </None>
+    <None Include="Uninstall_And_Delete.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>51f8f926-6bd5-4aac-9511-89008f170fc9</id>
+      <recordtableid>425076d3-65fa-45ca-a2bf-3e49d48ccb18</recordtableid>
+    </None>
+    <None Include="UserPreference_Excel_File.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>2f23bfe2-26f3-46c2-a534-541e1ea02868</id>
+      <recordtableid>2cb095fb-6b04-4038-b4e4-25dfb4e73f5c</recordtableid>
+    </None>
+    <None Include="User_Preferences_Record_Modules.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>f5b4ca62-3eec-44ba-9fa4-7c6331ad8080</id>
+      <recordtableid>ec400c63-49bb-4650-8a02-9cb53943edef</recordtableid>
+    </None>
+    <None Include="Validate_Audigy_Links.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>7252b66c-fac2-4b55-8e2b-7c8d8a0dfc2e</id>
+      <recordtableid>f206adcf-4f61-4861-85d2-321b47ba0f2b</recordtableid>
+    </None>
+    <None Include="Validate_SolusMax_Links.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>7c1a6a6b-c951-4b80-b882-2ca84398e2d7</id>
+      <recordtableid>3851f4a4-69d8-45d8-86df-16a8ad4e8ad8</recordtableid>
+    </None>
+    <None Include="Validating_excel_and_FSW.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>1f1d914d-824a-46ea-9f41-373914cecc03</id>
+      <recordtableid>4ecf5a59-5469-4377-8a6d-352385865f9b</recordtableid>
+    </None>
+    <None Include="Validating_URL.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>0664adc7-b775-4ba3-ac20-b0f0d6a3ae19</id>
+      <recordtableid>72e2223e-550b-4f3c-a678-d477b71616e3</recordtableid>
+    </None>
+    <None Include="WebUpdates_Excel_Comaparison.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>52a54612-6fab-4b38-b99b-d7262ec61945</id>
+      <recordtableid>c45ae338-536b-4537-9bc2-26d47db81d78</recordtableid>
+    </None>
+    <None Include="Web_Updates_FSW_Window.rxrec">
+      <BoundTo>82f5dbe7-d816-4ec9-8ed5-11da5b926d9c</BoundTo>
+      <id>460db1d3-ae44-4d49-93b2-4894c7831c9f</id>
+      <recordtableid>046b4d8e-fdfc-471a-8bdb-5f2a62ff1369</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Market_Preferences.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>33e9ec9c-f941-453f-9e1d-4c3a93f41d24</id>
+    </Content>
+    <Content Include="Market_Preferences.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c1aee225-115d-4013-bd05-91831f2bf8b8</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\RanorexReport.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>3416bc4a-2b66-4f79-923e-4d0c1185e419</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\RanorexReport.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>8ff25669-0773-46fe-9064-ba81158e4bdd</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\RanorexReport.xsl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>7261fb63-eb35-4031-b113-dae7115f59b6</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\View.rxlog">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>8af657c1-f368-4f22-95b9-c8253888ac5a</id>
+    </Content>
+    <Content Include="NewCustomTemplate1\View.rxlog.data">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>fdcb0a63-b278-4a93-afb0-e53b735fbb00</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewCustomTemplate1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>148afcf2-d180-41f8-bcf2-ea5c31428335</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
